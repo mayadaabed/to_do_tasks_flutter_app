@@ -1,16 +1,13 @@
 # to_do_app
 
-A new Flutter project.
+To Do App using Bloc state-management in Flutter.
 
-## Getting Started
+- Add new Tasks.
+- Archive Tasks.
+- Done Tasks.
+- List New Tasks.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1679914395](https://user-images.githubusercontent.com/45319357/227921884-3c9ed142-ffbe-4ad1-9beb-c16f77e19d2f.png)
+![Screenshot_1679914385](https://user-images.githubusercontent.com/45319357/227921891-bea18a19-b169-455d-ae77-0c22cc03c240.png)
+![Screenshot_1679914388](https://user-images.githubusercontent.com/45319357/227921892-ff764085-119f-4645-871a-48a3e0594810.png)
+![Screenshot_1679914392](https://user-images.githubusercontent.com/45319357/227921895-2dc8ac4f-dce7-4485-96bf-cb3d5baedfd8.png)
