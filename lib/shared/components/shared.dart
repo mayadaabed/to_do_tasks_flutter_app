@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:to_do_app/data_base/cubit/cubit.dart';
 
 import '../../style/colors.dart';
@@ -12,8 +11,7 @@ TextStyle textStyle({
   final color = black,
   final FontWeight fontWeight = FontWeight.normal,
 }) =>
-    GoogleFonts.poppins(
-        fontSize: fontSize, color: color, fontWeight: fontWeight);
+    TextStyle(fontSize: fontSize, color: color, fontWeight: fontWeight);
 
 Widget defaultFormField(
         {required TextEditingController controller,

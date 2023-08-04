@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../style/colors.dart';
 
@@ -27,7 +26,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: Center(
             child: Text(
               title,
-              style: GoogleFonts.poppins(
+              style: const TextStyle(
                   fontSize: 20, fontWeight: FontWeight.bold, color: white),
             ),
           ),

@@ -7,6 +7,7 @@ import 'package:to_do_app/data_base/cubit/states.dart';
 import '../shared/components/main_app_bar.dart';
 import '../style/colors.dart';
 
+// ignore: must_be_immutable
 class HomeLayout extends StatelessWidget {
   var scaffoldKey = GlobalKey<ScaffoldState>();
   var formKey = GlobalKey<FormState>();
@@ -14,6 +15,8 @@ class HomeLayout extends StatelessWidget {
   TextEditingController titleController = TextEditingController();
   TextEditingController timeController = TextEditingController();
   TextEditingController dateController = TextEditingController();
+
+  HomeLayout({super.key});
 
   @override
   Widget build(BuildContext context) {

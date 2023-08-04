@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:time_picker_widget/time_picker_widget.dart';
-
 import '../../data_base/cubit/cubit.dart';
 import '../../data_base/cubit/states.dart';
 import '../../shared/components/shared.dart';
 import '../../style/colors.dart';
+import 'package:flutter_datetime_picker_plus/flutter_datetime_picker_plus.dart'
+    as picker;
 
 class AddTasks extends StatefulWidget {
   const AddTasks({super.key});
@@ -24,19 +24,22 @@ class _AddTasksState extends State<AddTasks> {
   String? time;
 
   showTimePicker() async {
-    showCustomTimePicker(
-      context: context,
-      onFailValidation: (context) => debugPrint('Unavailable selection'),
-      initialTime: const TimeOfDay(hour: 2, minute: 0),
-    ).then((times) {
-      time = times!.format(context);
-      debugPrint(time);
-
-      setState(() {
-        time = times.format(context);
+    picker.DatePicker.showTime12hPicker(
+      context,
+      currentTime: DateTime.now(),
+      onChanged: (date) {
+        time = '${date.hour.toString()}:${date.minute.toString()}';
         timeController.text = time!;
-      });
-    });
+        print('change $time in time zone ' + date.minute.toString());
+      },
+      onConfirm: (date) {
+        setState(() {
+          print('confirm $time');
+          time = '${date.hour.toString()}:${date.minute.toString()}';
+          timeController.text = time!;
+        });
+      },
+    );
   }
 
   showDataPicker() async {

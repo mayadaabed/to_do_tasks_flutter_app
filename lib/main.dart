@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:to_do_app/splash/splash_screen.dart';
+import 'package:to_do_app/style/colors.dart';
 import 'shared/bloc_observer/bloc_observer.dart';
 
 void main() {
@@ -13,9 +14,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: mainColor),
+        useMaterial3: true,
+      ),
+      home: const SplashScreen(),
     );
   }
 }

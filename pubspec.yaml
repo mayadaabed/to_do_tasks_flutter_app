@@ -37,14 +37,13 @@ dependencies:
   cupertino_icons: ^1.0.2
   sqflite: ^2.2.4+1
   hexcolor: ^3.0.1  
-  google_fonts: ^3.0.1
   intl: ^0.18.0
   conditional_builder_null_safety: ^0.0.6
   bloc: ^8.1.0
   flutter_bloc: ^8.1.1
-  http: ^0.13.5 
+  http:  
   shared_preferences: ^2.0.17
-  time_picker_widget: ^1.0.0+10
+  flutter_datetime_picker_plus: ^2.0.1
 
 dev_dependencies:
   flutter_test:
